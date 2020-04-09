@@ -1,0 +1,23 @@
+git clone https://gyunseul9@bitbucket.org/gyunseul9/telegramchatbot.git
+
+virtualenv --python=python3.6 telegramchatbot
+
+cd telegramchatbot
+
+source ./bin/activate
+
+deactivate
+
+pip3 install -r requirements.txt
+
+git init
+git checkout -b public
+git add .
+git commit -am "init"
+git push --set-upstream origin 
+
+screen COMMAND
+Ctrl + a, ctrl + d
+screen -r
+screen -ls
+screen -S -X SESSIONID quit
